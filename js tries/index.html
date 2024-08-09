@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
+<link rel="icon" type="image" href="./images/logo.jpg"> 
+<title>product</title>
+</head>
+<body>
+    <!--main section-->
+<div class="grid-container">
+ 
+        <div class = "navigation">
+
+            <img src="./images/logo.jpg" alt="">
+            <h2>SUPER MART</h2>
+            <div><a href="#section-2">FRUITS</a><br /></div>
+            <div><a href="#section-3">VEGETABLES</a><br /></div>
+            <div> <a href="#section-4">DAIRY PRODUCE</a><br /></div>
+            <div> <a href="#section-5">MEAT  & SEAFOOD</a><br /></div>
+            <div> <a href="#section-6">BAKING & COOKING</a><br /></div>
+            <div><a href="#section-7" >CART</a></div>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="./images/three_16602750.png" alt="Menu">
+                </button>
+                <div class="dropdown-content">
+                  <a href="#section-2">FRUITS</a>
+                  <a href="#section-3">VEGETABLES</a>
+                  <a href="#section-4">DAIRY PRODUCE</a>
+                  <a href="#section-5">MEAT & SEAFOOD</a>
+                  <a href="#section-6">BAKING & COOKING</a>
+                  <a href="#section-7">CART</a>
+                </div>
+              </div>
+
+              
+        </div>
+    <div class = "content-container">
+      <div>
+                 <!--fruit section-->
+            <h2 class="head2" id="section-2">FRUITS</h2>
+            <div class="fruit-container">
+                <div>
+                    <div class="quantity-container">
+                        <input type="number" id="amount-0" name="quantity-grapes" min="1" max="100" placeholder="1" step="0.1">
+                        <label for="amount-0" class="custom-label" id="custom">Kg</label>
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-0', 0.1)">+</button>
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-0', -0.1)">-</button>
+                    </div>
+                    <img src="./images/apple.png" alt="Apple" id="amount-0-img">
+                    <span class="product-name">APPLE</span>
+                    <span class="price">Rs500(1kg)</span>
+                    <span class="material-symbols-outlined" onclick="addToCart(0)">add_shopping_cart</span>
+                </div>
+                
+                <div>
+                    <div class="quantity-container">
+                        <input type="number" id="amount-1" name="quantity-lemon" min="1" max="100" value="1" step="0.1" aria-label="Enter your Phone">
+
+                        <label for="amount-3" class="custom-label" id="custom0">Kg</label>
+
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-1', 0.1)">+</button>
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-1', -0.1)">-</button>
+                    </div>
+                    <img src="./images/lemon.png" alt="Lemon">
+                    <span class="product-name">LEMON</span>
+                    <span class="price">Rs500(1kg)</span>
+                    <span class="material-symbols-outlined" id="amount-01" onclick="addToCart(1)">add_shopping_cart</span>
+                </div>
+                <div>
+                    <div class="quantity-container">
+                        <input type="number" id="amount-2" name="quantity-grapes" min="1" max="100" placeholder="1" step="0.1" aria-label="Enter your Phone">
+                        <label for="amount-4" class="custom-label" id="custom1">Kg</label>
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-2', 0.1)">+</button>
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-2', -0.1)">-</button>
+                    </div>
+                    <img src="./images/bunch-of-red-grapes-removebg-preview.png" alt="Grapes">
+                    <span class="product-name">GRAPES</span>
+                    <span class="price">Rs500(1kg)</span>
+                    <span class="material-symbols-outlined" id="amount-02" onclick="addToCart(2)">add_shopping_cart</span>
+                </div>
+                <div>
+                    <div class="quantity-container">
+                        <input type="number" id="amount-3" name="quantity-pears" min="1" max="100" value="1" step="0.1">
+
+                        <label for="amount-5" class="custom-label" id="custom2">Kg</label>
+
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-3', 0.1)">+</button>
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-3', -0.1)">-</button>
+                    </div>
+                    <img src="./images/pears.png" alt="Pears">
+                    <span class="product-name">PEARS</span>
+                    <span class="price">Rs500(1kg)</span>
+                    <span class="material-symbols-outlined" id="amount-03" onclick="addToCart(3)">add_shopping_cart</span>
+                </div>
+                <div>
+                    <div class="quantity-container">
+                        <input type="number" id="amount-4" name="quantity-mango" min="1" max="100" value="1" step="0.1">
+
+                        <label for="amount-6" class="custom-label" id="custom3">Kg</label>
+
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-4', 0.1)">+</button>
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-4', -0.1)">-</button>
+                    </div>
+                    <img src="./images/mango-removebg-preview.png" alt="Mango">
+                    <span class="product-name">MANGO</span>
+                    <span class="price">Rs500(1kg)</span>
+                    <span class="material-symbols-outlined" id="amount-004" onclick="addToCart(4)">add_shopping_cart</span>
+                </div>
+                <div>
+                    <div class="quantity-container">
+                        <input type="number" id="amount-5" name="quantity-orange" min="1" max="100" value="1" step="0.1">
+
+                        <label for="amount-7" class="custom-label" id="custom4">Kg</label>
+
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-5', 0.1)">+</button>
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-5', -0.1)">-</button>
+                    </div>
+                    <img src="./images/image-removebg-preview(3).png" alt="Orange">
+                    <span class="product-name">ORANGE</span>
+                    <span class="price">Rs500(1kg)</span>
+                    <span class="material-symbols-outlined" id="amount-05" onclick="addToCart(5)">add_shopping_cart</span>
+                </div>
+                <div>
+                    <div class="quantity-container">
+                        <input type="number" id="amount-6" name="quantity-strawberry" min="1" max="100" value="1" step="0.1">
+
+                        <label for="amount-8" class="custom-label" id="custom5">Kg</label>
+
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-6', 0.1)">+</button>
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-6', -0.1)">-</button>
+                    </div>
+                    <img src="./images/kiwi.png" alt="Strawberry">
+                    <span class="product-name">KIWI</span>
+                    <span class="price">Rs500(1kg)</span>
+                    <span class="material-symbols-outlined" id="amount-06" onclick="addToCart(6)">add_shopping_cart</span>
+                </div>
+                <div>
+                    <div class="quantity-container">
+                        <input type="number" id="amount-7" name="quantity-blueberry" min="1" max="100" value="1" step="0.1">
+
+                        <label for="amount-9" class="custom-label" id="custom6">Kg</label>
+
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-7', 0.1)">+</button>
+                        <button type="button" class="quantity-btn" onclick="changeQuantity('amount-7', -0.1)">-</button>
+                    </div>
+                    <img src="./images/BLUEBERRY.png" alt="Blueberry">
+                    <span class="product-name">BLUEBERRY</span>
+                    <span class="price">Rs500(1kg)</span>
+                    <span class="material-symbols-outlined" id="amount-07" onclick="addToCart(7)">add_shopping_cart</span>
+                </div>
+            </div>
+
+            <!--vwgetable container-->
+            <div>
+                <div>
+                    <h2 class="head2"  id="section-3">VEGETABLE</h2>
+                    <div class="vegetable-container">
+                        <div>
+
+                            <div class="quantity-container">
+                                <input type="number" id="amount-8" name="quantity-onion" min="1" max="100" value="1" step="0.1">
+
+                                <label for="amount-10" class="custom-label" id="custom7">Kg</label>
+
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-8', 0.1)">+</button>
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-8', -0.1)">-</button>
+                            </div>
+                             <img src="./images/onion.png" alt="">
+                             <span class="product-name">ONION</span>
+                             <span class="price">Rs500(1kg)</span>  
+                             <span class="material-symbols-outlined"  id="amount-08" onclick="addToCart(8)">
+                                add_shopping_cart
+                                </span>
+
+                        </div>
+                        <div>
+                            <div class="quantity-container">
+                                <input type="number" id="amount-9" name="quantity-carrot" min="1" max="100" value="1" step="0.1">
+
+                                <label for="amount-11" class="custom-label" id="custom8">Kg</label>
+
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-9', 0.1)">+</button>
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-9', -0.1)">-</button>
+                            </div>
+                             <img src="./images/CARRROT.png" alt="">
+                             <span class="product-name">CARROT</span>
+                             <span class="price">Rs500(1kg)</span>  
+                             <span class="material-symbols-outlined"  id="amount-09" onclick="addToCart(9)">
+                                add_shopping_cart
+                                </span>
+                        </div>
+                        <div>
+                            <div class="quantity-container">
+                                <input type="number" id="amount-10" name="quantity-potato" min="1" max="100" value="1" step="0.1">
+
+                                <label for="amount-12" class="custom-label" id="custom9">Kg</label>
+
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-10', 0.1)">+</button>
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amounnt-10', -0.1)">-</button>
+                            </div>
+                             <img src="./images/POTATO.png" alt="">
+                             <span class="product-name">POTATO</span>
+                             <span class="price">Rs500(1kg)</span>  
+                             <span class="material-symbols-outlined"  id="amount-010" onclick="addToCart(10)">
+                                add_shopping_cart
+                                </span>
+                        </div>  
+                        <div>
+                            <div class="quantity-container">
+                                <input type="number" id="amount-11" name="quantity-broc" min="1" max="100" value="1" step="0.1">
+
+                                <label for="amount-13" class="custom-label" id="custom10">Kg</label>
+
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-11', 0.1)">+</button>
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-11', -0.1)">-</button>
+                            </div>
+                             <img src="./images/BROCCOLI.png" alt="">
+                             <span class="product-name">BROCCOLI</span>
+                             <span class="price">Rs500(1kg)</span>  
+                             <span class="material-symbols-outlined"  id="amount-011" onclick="addToCart(11)">
+                                add_shopping_cart
+                                </span>
+                        </div>
+                        <div>
+                            <div class="quantity-container">
+                                <input type="number" id="amount-12" name="quantity-gar" min="1" max="100" value="1" step="0.1">
+
+                                <label for="amount-14" class="custom-label" id="custom11">Kg</label>
+
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-12', 0.1)">+</button>
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-12', -0.1)">-</button>
+                            </div>
+                             <img src="./images/GARLIC.png" alt="">
+                             <span class="product-name">GARLIC</span>
+                             <span class="price">Rs500(1kg)</span>  
+                             <span class="material-symbols-outlined"  id="amount-012" onclick="addToCart(12)">
+                                add_shopping_cart
+                                </span> 
+                        </div>
+                        <div>
+                            <div class="quantity-container">
+                                <input type="number" id="amount-13" name="quantity-brin" min="1" max="100" value="1" step="0.1">
+
+                                <label for="amount-15" class="custom-label" id="custom12">Kg</label>
+
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-13', 0.1)">+</button>
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-13', -0.1)">-</button>
+                            </div>
+                             <img src="./images/BRINJL.png" alt="">
+                             <span class="product-name">BRINJAL</span>
+                             <span class="price">Rs500(1kg)</span>  
+                             <span class="material-symbols-outlined"  id="amount-013" onclick="addToCart(13)">
+                                add_shopping_cart
+                                </span>
+                        </div>
+                        <!--test1-->
+                        <div>
+                            <div class="quantity-container">
+                                <input type="number" id="amount-14" name="quantity-pump" min="1" max="100" value="1" step="0.1">
+
+                                <label for="amount-16" class="custom-label" id="custom13">Kg</label>
+
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-14', 0.1)">+</button>
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-14', -0.1)">-</button>
+                            </div>
+                             <img src="./images/PUMPKIN.png" alt="">
+                             <span class="product-name">PUMPKIN</span>
+                             <span class="price">Rs500(1kg)</span>
+                             <span class="material-symbols-outlined"  id="amount-014" onclick="addToCart(14)">
+                                add_shopping_cart
+                                </span>
+                         </div> 
+                         <div>
+                            <div class="quantity-container">
+                                <input type="number" id="amount-15" name="quantity-cab" min="1" max="100" value="1" step="0.1">
+
+                                <label for="amount-17" class="custom-label" id="custom14">Kg</label>
+
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-15', 0.1)">+</button>
+                                <button type="button" class="quantity-btn" onclick="changeQuantity('amount-15', -0.1)">-</button>
+                            </div>
+                             <img src="./images//CABBAGE.png" alt="">
+                             <span class="product-name">CABBAGE</span>
+                             <span class="price">Rs500(1kg)</span>
+                             <span class="material-symbols-outlined"  id="amount-015" onclick="addToCart(15)">
+                                add_shopping_cart
+                                </span>
+                         </div> 
+                    </div>
+                </div>
+            </div>
+            <!--DAIRY PRODUCE-->
+            <div>
+                <h2 class="head2"  id="section-4">DAIRY</h2>
+                <div class="dairy-container">
+                    <div>
+
+                        <div class="quantity-container">
+                            <input type="number" id="amount-16" name="quantity-ice" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-18" class="custom-label" id="custom15">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-16', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-16', -1)">-</button>
+                        </div>
+                         <img src="./images/icecream.png" alt="">
+                         <span class="product-name">ICE CREAM</span>
+                         <span class="price">Rs500(1Qt)</span> 
+                         <span class="material-symbols-outlined"  id="amount-016" onclick="addToCart(16)">
+                            add_shopping_cart
+                            </span> 
+
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-17" name="quantity-but" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-19" class="custom-label" id="custom16">Qt</label>
+
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amounnt-17', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-17', -1)">-</button>
+                        </div>
+                         <img src="./images/BUTTER.png" alt="">
+                         <span class="product-name">BUTTER</span>
+                         <span class="price">Rs500(1Qt)</span>  
+                         <span class="material-symbols-outlined"  id="amount-017" onclick="addToCart(17)">
+                            add_shopping_cart
+                            </span>
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-18" name="quantity-cheese" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-20" class="custom-label" id="custom17">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-18', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-18', -1)">-</button>
+                        </div>
+                         <img src="./images/CHEESE.png" alt="">
+                         <span class="product-name">CHEESE</span>
+                         <span class="price">Rs500(1Qt)</span>  
+                         <span class="material-symbols-outlined"  id="amount-018" onclick="addToCart(18)">
+                            add_shopping_cart
+                            </span> 
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-19" name="quantity-yo" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-21" class="custom-label" id="custom18">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-19', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-19', -1)">-</button>
+                        </div>
+                         <img src="./images/togurt.png" alt="">
+                         <span class="product-name">YOGURT</span>
+                         <span class="price">Rs500(1Qt)</span>  
+                         <span class="material-symbols-outlined"  id="amount-019" onclick="addToCart(19)">
+                            add_shopping_cart
+                            </span>
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-20" name="quantity-nut" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-21" class="custom-label" id="custom19">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-20', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-20', -1)">-</button>
+                        </div>
+                         <img src="./images/NUTELLA.png" alt="">
+                         <span class="product-name">NUTELLA</span>
+                         <span class="price">Rs500(1Qt)</span>
+                         <span class="material-symbols-outlined"  id="amount-020" onclick="addToCart(20)">
+                            add_shopping_cart
+                            </span> 
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-21" name="quantity-choco" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-22" class="custom-label" id="custom21">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-21', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-21', -1)">-</button>
+                        </div>
+                         <img src="./images/chcoco.png" alt="">
+                         <span class="product-name">CHOCOLATE</span>
+                         <span class="price">Rs500(1Qt)</span>  
+                         <span class="material-symbols-outlined"  id="amount-021" onclick="addToCart(21)">
+                            add_shopping_cart
+                            </span> 
+                    </div>
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-22" name="quantity-pop" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-23" class="custom-label" id="custom20">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-22', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-22', -1)">-</button>
+                        </div>
+                         <img src="./images/PPPOPSICLES.png" alt="">
+                         <span class="product-name">POPSICLES</span>
+                         <span class="price">Rs500(1Qt)</span>  
+                         <span class="material-symbols-outlined"  id="amount-022" onclick="addToCart(22)">
+                            add_shopping_cart
+                            </span>
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-23" name="quantity-curd" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-24" class="custom-label" id="custom21">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-23', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-23', -1)">-</button>
+                        </div>
+                         <img src="./images/CURD.png" alt="">
+                         <span class="product-name">CURD</span>
+                         <span class="price">Rs500(1Qt)</span>  
+                         <span class="material-symbols-outlined"  id="amount-023" onclick="addToCart(23)">
+                            add_shopping_cart
+                            </span>
+                    </div>
+             </div> 
+           </div> 
+           <!--meat and seafood section-->  
+            <div>
+                <h2 class="head3"  id="section-5">MEAT & SEAFOOD</h2>
+                <div class="meat-container">
+                    <div>
+
+                        <div class="quantity-container">
+                            <input type="number" id="amount-24" name="quantity-spam" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-25" class="custom-label" id="custom22">Kg</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-24', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-24', -1)">-</button>
+                        </div>
+                         <img src="./images/spam.png" alt="">
+                         <span class="product-name">SPAM</span>
+                         <span class="price">Rs500(1Kg)</span> 
+                         <span class="material-symbols-outlined"  id="amount-024" onclick="addToCart(24)">
+                            add_shopping_cart
+                            </span> 
+
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-25" name="quantity-prawns" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-26" class="custom-label" id="custom23">Kg</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-25', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-25', -1)">-</button>
+                        </div>
+                         <img src="./images/PRAWNS.png" alt="">
+                         <span class="product-name">PRAWNS</span>
+                         <span class="price">Rs500(1Kg)</span>  
+                         <span class="material-symbols-outlined"  id="amount-025" onclick="addToCart(25)">
+                            add_shopping_cart
+                            </span>
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-26" name="quantity-beef" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-27" class="custom-label" id="custom24">Kg</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-26', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-26', -1)">-</button>
+                        </div>
+                         <img src="./images/beef.png" alt="">
+                         <span class="product-name">BEEF</span>
+                         <span class="price">Rs500(1Kg)</span>  
+                         <span class="material-symbols-outlined"  id="amount-026" onclick="addToCart(26)">
+                            add_shopping_cart
+                            </span>
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-27" name="quantity-sal" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-28" class="custom-label" id="custom25">Kg</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-27', 0.1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-27', -0.1)">-</button>
+                        </div>
+                         <img src="./images/SALMON.png" alt="">
+                         <span class="product-name">SALMON</span>
+                         <span class="price">Rs500(1Kg)</span>  
+                         <span class="material-symbols-outlined"  id="amount-027" onclick="addToCart(27)">
+                            add_shopping_cart
+                            </span>
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-28" name="quantity-eggs" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-29" class="custom-label" id="custom26">Kg</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-28', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-28', -1)">-</button>
+                        </div>
+                         <img src="./images/EGGS.png" alt="">
+                         <span class="product-name">EGGS</span>
+                         <span class="price">Rs500(1Kg)</span>
+                         <span class="material-symbols-outlined"  id="amount-028" onclick="addToCart(28)">
+                            add_shopping_cart
+                            </span>  
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-29" name="quantity-lob" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-30" class="custom-label" id="custom27">Kg</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-29', 0.1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-29', -0.1)">-</button>
+                        </div>
+                         <img src="./images/lobster.png" alt="">
+                         <span class="product-name">LOBSTER</span>
+                         <span class="price">Rs500(1Kg)</span>  
+                         <span class="material-symbols-outlined"  id="amount-029" onclick="addToCart(29)">
+                            add_shopping_cart
+                            </span>
+                    </div>
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-30" name="quantity-bac" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-31" class="custom-label" id="custom28">Kg</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-30', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-30', -1)">-</button>
+                        </div>
+                         <img src="./images/BACON.png" alt="">
+                         <span class="product-name">BACON</span>
+                         <span class="price">Rs500(1Kg)</span>
+                         <span class="material-symbols-outlined"  id="amount-030" onclick="addToCart(30)">
+                            add_shopping_cart
+                            </span>  
+                    </div>
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-31" name="quantity-squid" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-32" class="custom-label" id="custom29">Kg</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-31', 0.1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-31', -0.1)">-</button>
+                        </div>
+                         <img src="./images/SQUID.png" alt="">
+                         <span class="product-name">SQUID</span>
+                         <span class="price">Rs500(1Kg)</span>
+                         <span class="material-symbols-outlined"  id="amount-031" onclick="addToCart(31)">
+                            add_shopping_cart
+                            </span>  
+                    </div>
+             </div> 
+            </div>
+            <div>
+
+                <!--BAKING AND COOKING-->
+
+                <h2 class="head4"  id="section-6">BAKING & COOKING</h2>
+                <div class="beak-container">
+                    <div>
+
+                        <div class="quantity-container">
+                            <input type="number" id="amount-32" name="quantity-bread" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-33" class="custom-label" id="custom30">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-32', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-32', -1)">-</button>
+                        </div>
+                         <img src="./images/flour.png" alt="">
+                         <span class="product-name">FLOUR</span>
+                         <span class="price">Rs500(1Qt)</span> 
+                         <span class="material-symbols-outlined"  id="amount-032" onclick="addToCart(32)">
+                            add_shopping_cart
+                            </span> 
+                          
+
+                    </div>
+               
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-33" name="quantity-cros" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-34" class="custom-label" id="custom31">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-33', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('mount-33', -1)">-</button>
+                        </div>
+                         <img src="./images/VANILALLLLALALA.png" alt="">
+                         <span class="product-name">VANLLA</span>
+                         <span class="price">Rs500(1Qt)</span>  
+                         <span class="material-symbols-outlined"  id="amount-033" onclick="addToCart(33)">
+                            add_shopping_cart
+                            </span> 
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-34" name="quantity-cake" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-35" class="custom-label" id="custom32">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-34', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-34', -1)">-</button>
+                        </div>
+                         <img src="./images/SALT.png" alt="">
+                         <span class="product-name">SALT</span>
+                         <span class="price">Rs500(1Qt)</span>  
+                         <span class="material-symbols-outlined"  id="amount-034" onclick="addToCart(34)">
+                            add_shopping_cart
+                            </span>
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-35" name="quantity-cookie" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-36" class="custom-label" id="custom33">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-35', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-35', -1)">-</button>
+                        </div>
+                         <img src="./images/saffron.png" alt="">
+                         <span class="product-name">SAFFRON</span>
+                         <span class="price">Rs500(1Qt)</span>  
+                         <span class="material-symbols-outlined"  id="amount-035" onclick="addToCart(35)">
+                            add_shopping_cart
+                            </span> 
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-36" name="quantity-brownie" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-37" class="custom-label" id="custom34">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-36', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-36', -1)">-</button>
+                        </div>
+                         <img src="./images/HONEY.png" alt="">
+                         <span class="product-name">HONEY</span>
+                         <span class="price">Rs500(1Qt)</span>
+                         <span class="material-symbols-outlined"  id="amount-036" onclick="addToCart(36)">
+                            add_shopping_cart
+                            </span>  
+                    </div>
+
+                    <div>
+                        <div class="quantity-container">
+                            <input type="number" id="amount-37" name="quantity-samdwich" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-38" class="custom-label" id="custom35">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amunt-37', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-37', -1)">-</button>
+                        </div>
+                         <img src="./images/YEAST.png" alt="">
+                         <span class="product-name">YEAST</span>
+                         <span class="price">Rs500(1Qt)</span>  
+                         <span class="material-symbols-outlined"  id="amount-037" onclick="addToCart(37)">
+                            add_shopping_cart
+                            </span>
+                    </div>
+                    <div>
+                        <div class="quantity-container">
+                            <input class="btn" type="number" id="amount-38" name="quantity-cupcake" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-39" class="custom-label" id="custom36">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-38', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-38', -1)">-</button>
+                        </div>
+                        <img src="./images/SPRINKLES.png" alt="">
+                        <span class="product-name">SPRINKLE</span>
+                        <span class="price">Rs500(1Qt)</span>
+                        <span class="material-symbols-outlined"  id="amount-038" onclick="addToCart(38)">
+                            add_shopping_cart
+                        </span>
+                    </div>
+                    <div>
+                        <div class="quantity-container">
+                            <input class="btn" type="number" id="amount-39" name="quantity-donut" min="1" max="100" value="1" step="0.1">
+
+                            <label for="amount-50" class="custom-label" id="custom397">Qt</label>
+
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-39', 1)">+</button>
+                            <button type="button" class="quantity-btn" onclick="changeQuantity('amount-39', -1)">-</button>
+                        </div>
+                        <img src="./images/cocoa.png" alt="">
+                        <span class="product-name">COCOA</span>
+                        <span class="price" id="pricee">Rs500(1Qt)</span>  
+                        <span class="material-symbols-outlined"  id="amount-039" onclick="addToCart(39)">
+                            add_shopping_cart
+                        </span>
+                    </div>
+                </div> 
+            </div>     
+                <div class="table-container">
+                    <h2 class="head7" id="section-7">CART</h2>
+                    <div class="table-wrapper">
+                        <table id="table">
+                            <thead>
+                                <tr>
+                                    <th>ITEM</th>
+                                    <th>ITEM NAME</th>
+                                    <th>QUANTITY</th>
+                                    <th>PRICE(Kg)</th>
+                                    <th>PRICE</th>
+                                    <th>BIN</th>
+
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Cart items will be dynamically added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </div>        
+                 
+    </div>
+</div>
+    <script src="./main.js"></script>
+    <script src="./main2.js"></script>
+</body>
+</html>
